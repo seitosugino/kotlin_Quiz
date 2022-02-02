@@ -34,9 +34,57 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:onClick="onButton"
         android:text="ans1"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ansBtn2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvQuestion" />
+
+    <Button
+        android:id="@+id/ansBtn2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="onButton"
+        android:text="ans2"
+        app:layout_constraintBottom_toTopOf="@+id/ansBtn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ansBtn1" />
+
+    <Button
+        android:id="@+id/ansBtn3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="onButton"
+        android:text="ans3"
+        app:layout_constraintBottom_toTopOf="@+id/ansBtn4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ansBtn2" />
+
+    <Button
+        android:id="@+id/ansBtn4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="onButton"
+        android:text="ans4"
+        app:layout_constraintBottom_toBottomOf="@+id/nextBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ansBtn3" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onNext"
+        android:text="next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ansBtn4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
